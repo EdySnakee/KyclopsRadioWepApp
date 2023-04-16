@@ -172,8 +172,10 @@ input.mainBtn { background-color: #a71e2b; color: white; border: 0; outline: 0; 
 
 .menu li { width: 120px; height: 120px; margin-bottom: 3px; background-color: rgba(0, 0, 0, 0.7); text-align: center; }
 .menu li a { width: 70px; height: 70px; color: white; line-height: 72px; border: 1px solid rgba(255, 255, 255, 0.5); display: inline-block; margin: 5px auto 0 auto; -webkit-border-radius: 45px; border-radius: 45px; text-align: center; }
-.menu li a:hover { border-color: white; }
-.menu li a i { text-align: center; margin: 0 !important; font-size: 24px; }
+	.menu li a:hover {
+		border-color: #DD0536;
+	}
+.menu li a i { text-align: center; margin: 0 !important; font-size: 33px; }
 
 .tooltip { font-size: 16px; width: 120px; }
 
