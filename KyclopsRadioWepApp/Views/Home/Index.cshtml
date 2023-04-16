@@ -14,13 +14,17 @@
     <meta name="ESD" content="Proyecto Kyclops">
     <meta charset="UTF-8">
     <link href='http://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700,800' rel='stylesheet' type='text/css'>
+    <script src="https://example.com/fontawesome/v6.4.0/js/all.js" data-auto-add-css="false"></script>
+    <link href="https://example.com/fontawesome/v6.4.0/css/svg-with-js.css" rel="stylesheet">
+
 
     <!-- CSS Bootstrap & Custom -->
     <link href="~/bootstrap/css/bootstrap.css" rel="stylesheet" media="screen">
     <link href="~/css/font-awesome.min.css" rel="stylesheet" media="screen">
-    <link rel="~/stylesheet" href="css/templatemo_misc.css">
-    <link rel="~/stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="~/css/templatemo_misc.css">
+    <link rel="stylesheet" href="~/css/animate.css">
     <link href="~/css/templatemo_style.css" rel="stylesheet" media="screen">
+
 
     <!-- Favicons -->
     <link rel="shortcut icon" href="~/images/ico/favicon.ico">
@@ -28,10 +32,12 @@
     <!-- JavaScripts -->
     <script src="~/js/jquery-1.10.2.min.js"></script>
     <script src="~/js/modernizr.js"></script>
+   
 
 </head>
 <body>
 
+    <audio id="radio" src="https://stream-069.zeno.fm/n0x77d1wgxhvv?zs=79AKhFoDRN-5UZt8ucONAw"></audio>
 
     <div class="bg-image"></div>
     <div class="overlay-bg"></div>
@@ -44,11 +50,10 @@
         </a>
         <div class="responsive_menu">
             <ul class="main_menu">
-                <li><a class="show-1 homebutton" href="#"><i class="fa fa-home"></i>Homepage</a></li>
-                <li><a class="show-2" href="#"><i class="fa fa-group"></i>About Us</a></li>
-                <li><a class="show-3" href="#"><i class="fa fa-briefcase"></i>Our Gallery</a></li>
-                <li><a class="show-4" href="#"><i class="fa fa-cogs"></i>Services</a></li>
-                <li><a class="show-5" href="#"><i class="fa fa-globe"></i>Contact Us</a></li>
+                <li><a class="show-1 homebutton" href="#"><i class="fa fa-eye"></i>INICIO</a></li>
+                <li><a class="show-2" href="#"><i class="fa fa-users"></i>NOSOTROS</a></li>
+                <li><a class="show-3" href="#"><i class="fa fa-book"></i>ARTICULOS</a></li>
+                <li><a class="show-5" href="#"><i class="fa fa-floppy-o" aria-hidden="true"></i>CONTACTO</a></li>
             </ul> <!-- /.main_menu -->
         </div> <!-- /.responsive_menu -->
     </div> <!-- /responsive_navigation -->
@@ -61,11 +66,13 @@
                 <div class="col-md-2 visible-md visible-lg">
                     <div class="main_menu">
                         <ul class="menu">
-                            <li><a class="show-1 homebutton" href="#" data-toggle="tooltip" data-original-title="INICIO"><i class="fa fa-home"></i></a></li>
-                            <li><a class="show-2" href="#" data-toggle="tooltip" data-original-title="NOSOTROS"><i class="fa fa-user"></i></a></li>
-                            <li><a class="show-3" href="#" data-toggle="tooltip" data-original-title="ARTICULOS"><i class="fa fa-briefcase"></i></a></li>
-                            <li><a class="show-5" href="#" data-toggle="tooltip" data-original-title="CONTACTO"><i class="fa fa-globe"></i></a></li>
+                            <li><a class="show-7" href="#" data-toggle="tooltip" data-original-title="RADIO" style="line-height: 92px;"><i class="fa-play-circle fa fa-pause icono-rojo" id="play-button"></i></a></li>
+                            <li><a class="show-1 homebutton" href="#" data-toggle="tooltip" data-original-title="INICIO"><i class="fa fa-eye icono-rojo"></i></a></li>
+                            <li><a class="show-2" href="#" data-toggle="tooltip" data-original-title="NOSOTROS"><i class="fa fa-users icono-rojo"></i></a></li>
+                            <li><a class="show-3" href="#" data-toggle="tooltip" data-original-title="ARTICULOS"><i class="fa fa-book icono-rojo"></i></a></li>
+                            <li><a class="show-5" href="#" data-toggle="tooltip" data-original-title="CONTACTO"><i class="fa fa-floppy-o icono-rojo" aria-hidden="true"></i></a></li>
                         </ul>
+
                     </div> <!-- /.main-menu -->
                 </div> <!-- /.col-md-2 -->
                 <!-- Begin Content -->
@@ -479,13 +486,13 @@
 
                         <div id="menu-5" class="content">
                             <div class="page-header">
-                                <h2 class="page-title">Stay In Touch</h2>
+                                <h2 class="page-title">CONECTA CON KYCLOPS</h2>
                             </div> <!-- /.page-header -->
                             <div class="content-inner">
                                 <div class="row">
                                     <div class="col-md-8">
-                                        <h3 class="widget-title">Send a message</h3>
-                                        <p>Feel free to send us a message regarding this Genius HTML5 template. Pellentesque pulvinar, orci vel scelerisque suscipit, libero justo laoreet felis, ac consectetur est nisi quis ligula. Maecenas nec felis elit.</p>
+                                        <h3 class="widget-title"></h3>
+                                        <p>"¡Tu opinión nos importa! En KyclopsRadio queremos estar en sintonía contigo y conocer tus comentarios, sugerencias y hasta peticiones de canciones. Si eres un artista o banda independiente, ¡no dudes en contactarnos! Queremos apoyar la música local y descubrir nuevos talentos.</p>
                                         <div class="row contact-form">
                                             <div class="col-md-4">
                                                 <label for="name-id">Your Name:</label>
@@ -510,18 +517,12 @@
                                         <div class="information">
                                             <h3 class="widget-title">Information</h3>
                                             <ul class="our-location">
-                                                <li><span><i class="fa fa-map-marker"></i>Address:</span>120 Nullam viverra dolor</li>
-                                                <li><span><i class="fa fa-map-marker"></i>Phone:</span>010-020-0210</li>
-                                                <li><span><i class="fa fa-map-marker"></i>Email:</span><a href="mailto:info@company.com">info@company.com</a></li>
+                                                <li><span><i class="fa fa-map-marker"></i>Address:</span>México CDMX</li>
+                                                <li><span><i class="fa fa-map-marker"></i>Phone:</span>55 8722 9590</li>
+                                                <li><span><i class="fa fa-map-marker"></i>Email:</span><a href="mailto:kyclopsradio@outlook.com">kyclopsradio@outlook.com</a></li>
                                             </ul>
                                         </div> <!-- /.information -->
-                                        <div class="google-map">
-                                            <h3 class="widget-title">Our Location</h3>
-                                            <div class="contact-map">
-                                                <div class="google-map-canvas" id="map-canvas" style="height: 200px;">
-                                                </div>
-                                            </div> <!-- /.contact-map -->
-                                        </div> <!-- /.google-map -->
+                                       
                                     </div> <!-- /.col-md-4 -->
                                 </div> <!-- /.row -->
                             </div> <!-- /.content-inner -->
@@ -556,32 +557,17 @@
         </div> <!-- /.container -->
     </div> <!-- /.main-content -->
 
+    
+    <script src="~/js/RadioJs.js"></script>
+
+
     <script src="~/bootstrap/js/bootstrap.min.js"></script>
 
     <script src="~/js/jquery.mixitup.min.js"></script>
     <script src="~/js/jquery.nicescroll.min.js"></script>
     <script src="~/js/jquery.lightbox.js"></script>
     <script src="~/js/templatemo_custom.js"></script>
-    <script>
-        function initialize() {
-            var mapOptions = {
-                zoom: 15,
-                center: new google.maps.LatLng(16.832179, 96.134976)
-            };
-
-            var map = new google.maps.Map(document.getElementById('map-canvas'),
-                mapOptions);
-        }
-
-        function loadScript() {
-            var script = document.createElement('script');
-            script.type = 'text/javascript';
-            script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&' +
-                'callback=initialize';
-            document.body.appendChild(script);
-        }
-
-    </script>
+    
 </body>
 </html>
 
