@@ -34,18 +34,31 @@ jQuery(document).ready(function($){
 	/************** MixItUp Plugin *********************/
 	$('#Grid').mixitup({
         effects: ['fade','grayscale'],
-        easing: 'snap',
-        transitionSpeed: 800
+        easing: 'linear',
+        transitionSpeed: 400
     });
 
 
 
 	/************** Nice Scroll Plugin *********************/
 	$("html").niceScroll({
-		cursorcolor : '#a71e2b',
-		cursorborder : 0,
-		zindex : 99999,
+		cursorcolor: '#a71e2b',
+		cursorborder: 0,
+		zindex: 99999,
+		cursorwidth: "10px",
+		background: "#ddd",
+		cursoropacitymin: 0.5,
+		cursoropacitymax: 0.8,
+		cursorborderradius: "5px",
+		railpadding: { top: 0, right: 5, left: 5, bottom: 0 },
+		easing: 'linear',
+		scrollspeed: 100,
+		mousescrollstep: 40,
+		autohidemode: false
 	});
+
+
+
 
 	/************** LightBox *********************/
 	$(function(){
