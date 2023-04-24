@@ -25,6 +25,10 @@ html {
     color: #fff;
     margin-bottom: 10px;
 }
+.icono-rojo2 {
+    color: #DD0536;
+    font-size: 7rem;
+}
 
 .contact-form input[type="text"],
 .contact-form textarea {
@@ -79,10 +83,6 @@ html {
     color: red;
 }
 
-
-
-
-
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
   box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
@@ -94,4 +94,17 @@ html {
 
 body {
   margin-bottom: 60px;
+}
+
+
+/*REPRODUCTOR*/
+
+input[type=range]::-webkit-slider-thumb {
+    background-color: #DD0536;
+}
+
+
+
+input[type=range]::-ms-thumb {
+    background-color: #DD0536;
 }

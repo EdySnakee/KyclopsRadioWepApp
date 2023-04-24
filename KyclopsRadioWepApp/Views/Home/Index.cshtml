@@ -65,7 +65,7 @@
                 <div class="col-md-2 visible-md visible-lg">
                     <div class="main_menu">
                         <ul class="menu">
-                            <li><a class="show-7" href="#" data-toggle="tooltip" data-original-title="RADIO" style="line-height: 92px;">
+                            <li><a class="show-6" href="#" data-toggle="tooltip" data-original-title="RADIO" style="line-height: 92px;">
                                 <i class="fa-play-circle fa fa-pause icono-rojo" id="play-button"></i></a></li>
                             <li><a class="show-1 homebutton" href="#" data-toggle="tooltip" data-original-title="INICIO"><i class="fa fa-eye"></i></a></li>
                             <li><a class="show-3" href="#" data-toggle="tooltip" data-original-title="ARTICULOS" style="line-height: 82px;"><i class="fa fa-book"></i></a></li>
@@ -77,7 +77,7 @@
                 </div> <!-- /.col-md-2 -->
           
                 <!-- Begin Content -->
-                <div class="col-md-10">
+                  <div class="col-md-10">
 
                     <div class="row">
                         <div class="col-md-12">
@@ -537,9 +537,68 @@
 
                             </div> <!-- /.content-inner -->
 
-                        </div> 
-                       
-                        
+                        </div>
+
+
+
+                        <!-- Reproductor -->
+                        <div id="menu-6" class="content about-us">
+
+                            <audio id="audio-player" src="https://stream-069.zeno.fm/n0x77d1wgxhvv?zs=79AKhFoDRN-5UZt8ucONAw"></audio>
+                            <div class="text-center">
+                                <h1 class="text-danger" style="font-size: 10rem;"><i class="fa fa-broadcast-tower"></i>Live</h1>
+
+                                <a href="#" data-toggle="tooltip" data-original-title="RADIO" style="line-height: 92px;">
+                                    <i class="fa-play-circle fa fa-pause icono-rojo2" id="button2"></i>
+                                </a>
+                            </div>
+
+                            <div class="text-center">
+                                <input type="range" id="volumen-barra" class="form-range" min="0" max="100" value="75">
+                            </div>
+
+                            @*//EL ese//*@
+                            <script>
+                                var audio = document.getElementById("audio-player");
+                                var playButton = document.getElementById("button2");
+
+                                playButton.onclick = function () {
+                                    if (audio.paused) {
+                                        audio.play();
+                                        playButton.classList.remove("fa-play-circle");
+                                        playButton.classList.add("fa-pause-circle");
+                                    } else {
+                                        audio.pause();
+                                        playButton.classList.remove("fa-pause-circle");
+                                        playButton.classList.add("fa-play-circle");
+                                    }
+                                }
+
+                                document.getElementById("volumen-barra").oninput = function () {
+                                    audio.volume = this.value / 100;
+                                }
+                            </script>
+
+
+
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                         <div class="site-footer">
                             <div class="row">
                                 <div class="col-md-6">
@@ -550,31 +609,31 @@
                                 <div class="col-md-6">
                                     <div class="social-icons-footer">
                                         <ul>
-                                            <li><a target="_parent" href="https://www.facebook.com/KyclopsRadio" class="fa fa-facebook"></a></li>
-                                            <li><a href="https://twitter.com/KyclopsRadio?s=08" class="fa fa-twitter"></a></li>
-                                            <li><a href="https://www.instagram.com/kyclopsradio?r=nametag" class="fa fa-youtube"></a></li>
-                                            <li><a href="https://www.instagram.com/kyclopsradio?r=nametag" class="fa fa-instagram"></a></li>
-                                            <li><a href="https://open.spotify.com/show/2GWOpx2v6zGyHLcESPXtL5" class="fa fa-rss"></a></li>
+                                            <li><a target="_blank" href="https://www.facebook.com/KyclopsRadio" class="fa fa-facebook"></a></li>
+                                            <li><a href="https://twitter.com/KyclopsRadio?s=08" target="_blank" class="fa fa-twitter"></a></li>
+                                            <li><a href="https://www.instagram.com/kyclopsradio?r=nametag" target="_blank" class="fa fa-youtube"></a></li>
+                                            <li><a href="https://www.instagram.com/kyclopsradio?r=nametag" target="_blank" class="fa fa-instagram"></a></li>
+                                            <li><a href="https://open.spotify.com/show/2GWOpx2v6zGyHLcESPXtL5" target="_blank" class="fa fa-rss"></a></li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
-                        </div> 
-                    </div> 
+                        </div>
 
-                    <!-- /.content-holder -->
+                    </div>
 
-                </div> 
-                <!-- /.col-md-10 -->
-            </div> <!-- /.row -->
-        </div> <!-- /.container -->
-    </div> <!-- /.main-content -->
-
-
-
+                  </div> 
+                 </div> <!-- /.row -->
+            </div> <!-- /.container -->
+         </div>
+    </div>
+           
+                  
 
 
-    
+
+
+        <script type="text/javascript" src="~/js/jquery.min.js"></script>
     <script src="~/js/RadioJs.js"></script>
 
     <script src="~/bootstrap/js/bootstrap.min.js"></script>
