@@ -1,0 +1,110 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.icono-rojo {
+    color: #DD0536;
+}
+#play-button.icono-rojo {
+    font-size: 3em;
+}
+#play-button i {
+    outline: none;
+}
+
+/*--Formularo--*/
+.contact-form label {
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.icono-rojo2 {
+    color: #DD0536;
+    font-size: 7rem;
+}
+
+.contact-form input[type="text"],
+.contact-form textarea {
+    border: none;
+    border-radius: 50px;
+    padding: 15px 20px;
+    font-size: 16px;
+    color: #222;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+    .contact-form input[type="text"]:hover,
+    .contact-form textarea:hover {
+        background-color: #f5f5f5;
+    }
+
+.contact-form textarea {
+    height: 150px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 50px;
+}
+
+.contact-form input[type="submit"] {
+    background-color: #DD0536;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 15px 30px;
+    margin-top: 30px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 50px;
+}
+
+    .contact-form input[type="submit"]:hover {
+        background-color: #222;
+        cursor: pointer;
+    }
+.our-location li:nth-child(1),
+.our-location li:nth-child(2),
+.our-location li:nth-child(3) {
+    font-size: 16px;
+}
+
+.social-icons-footer ul li a:hover {
+    color: red;
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+
+/*REPRODUCTOR*/
+
+input[type=range]::-webkit-slider-thumb {
+    background-color: #DD0536;
+}
+
+
+
+input[type=range]::-ms-thumb {
+    background-color: #DD0536;
+}
