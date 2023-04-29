@@ -47,13 +47,13 @@ jQuery(document).ready(function($){
 		zindex: 99999,
 		cursorwidth: "10px",
 		background: "#ddd",
-		cursoropacitymin: 0.5,
-		cursoropacitymax: 0.8,
+		cursoropacitymin: 10,
+		cursoropacitymax: 108,
 		cursorborderradius: "5px",
 		railpadding: { top: 0, right: 5, left: 5, bottom: 0 },
 		easing: 'linear',
-		scrollspeed: 10,
-		mousescrollstep: .40,
+		scrollspeed: .01,
+		mousescrollstep: 900,
 		autohidemode: false
 	});
 
