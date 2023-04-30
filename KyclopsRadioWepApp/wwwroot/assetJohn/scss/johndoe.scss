@@ -14,15 +14,15 @@
 
 
 // Core
-@import "vendors/bootstrap-4.3.1/functions";
-
+@import "~/assetJohn/vendors/bootstrap-4.3.1/functions";
+@import "~/assetJohn/vendors/bootstrap";
 // custom variables
-@import "abstracts/variables";
+@import "abstracts/_variables.scss";
 // bootstrap variables
-@import "vendors/bootstrap-4.3.1/variables";
+@import "~/assetJohn/vendors/bootstrap-4.3.1/variables";
 
-@import "vendors/bootstrap-4.3.1/mixins";
-@import "abstracts/mixins";
+@import "~/assetJohn/vendors/bootstrap-4.3.1/mixins";
+@import "~/assetJohn/abstracts/mixins";
 
 
 // Bootstrap 4.3.1

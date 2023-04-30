@@ -52,8 +52,8 @@ jQuery(document).ready(function($){
 		cursorborderradius: "5px",
 		railpadding: { top: 0, right: 5, left: 5, bottom: 0 },
 		easing: 'linear',
-		scrollspeed: .1,
-		mousescrollstep: 100,
+		scrollspeed: 10,
+		mousescrollstep: 50,
 		autohidemode: false
 	});
 
