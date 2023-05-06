@@ -23,7 +23,7 @@ jQuery(document).ready(function($){
 	function toolTipInit() {
 	
 		$('.menu li a').tooltip({
-			placement: 'right'
+			placement: 'leff'
 		});
 	}
 	
@@ -35,7 +35,7 @@ jQuery(document).ready(function($){
 	$('#Grid').mixitup({
         effects: ['fade','grayscale'],
         easing: 'linear',
-        transitionSpeed: 400
+        transitionSpeed: 100
     });
 
 
@@ -43,17 +43,17 @@ jQuery(document).ready(function($){
 	/************** Nice Scroll Plugin *********************/
 	$("html").niceScroll({
 		cursorcolor: '#a71e2b',
-		cursorborder: 0,
+		cursorborder: 5,
 		zindex: 99999,
 		cursorwidth: "10px",
 		background: "#ddd",
 		cursoropacitymin: 10,
-		cursoropacitymax: 108,
+		cursoropacitymax: 8,
 		cursorborderradius: "5px",
 		railpadding: { top: 0, right: 5, left: 5, bottom: 0 },
 		easing: 'linear',
-		scrollspeed: 1,
-		mousescrollstep: 100,
+		scrollspeed: .001,
+		mousescrollstep: 300,
 		autohidemode: false
 	});
 
