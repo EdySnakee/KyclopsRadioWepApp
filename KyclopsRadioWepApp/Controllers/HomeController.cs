@@ -23,9 +23,10 @@ namespace KyclopsRadioWepApp.Controllers
             return View();
         } 
 
-        public IActionResult john()
+      
+        public IActionResult Men()
         {
-            return View();
+            return View("Bandas/Men");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
